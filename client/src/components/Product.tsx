@@ -2,7 +2,7 @@ import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Rating from './Rating'
 
-type ProductProps = {
+export type ProductProps = {
   product: {
     _id: string
     name: string

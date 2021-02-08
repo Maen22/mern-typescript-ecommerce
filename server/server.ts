@@ -1,7 +1,10 @@
 import express, { Request, Response } from 'express'
 import products from './data/products'
+import cors from 'cors'
 
 const app = express()
+
+app.use(cors())
 
 app.get('/', (_, res: Response) => {
   res.send('API is running...')
